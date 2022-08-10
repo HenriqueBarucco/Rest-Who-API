@@ -16,4 +16,8 @@ public class EpisodeService {
     public List<Episode> findAll() {
         return episodeRepository.findAll();
     }
+
+    public Episode findByEpisodeAndSeason(String episode, String season) {
+        return episodeRepository.searchByEpisodeAndSeason(episode, season);
+    }
 }
